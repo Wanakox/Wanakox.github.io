@@ -18,7 +18,7 @@
   --indigo: #C45F90;
   --purple: #A16AE8;
   --pink: #FC8BC0;
-  --red: #F85C70;
+  --red: #eb4a58;
   --orange: #FF8882;
   --yellow: #FAD02C;
   --green: #A3C14A;
@@ -50,61 +50,11 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    #hackathonCarousel {
-        height: 220px;
-    }
-
-    #hackathonCarousel .carousel-item img {
-        height: 220px;
-    }
-}
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-#hackathonCarousel {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-
-#hackathonCarousel .carousel-inner,
-#hackathonCarousel .carousel-item {
-    height: 100%;
-}
-
-#hackathonCarousel .carousel-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.university-logo {
-    width: 56px;
-    height: 56px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.achievement-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.achievement-card .img-holder {
-    width: 100%;
-    max-width: 100%;
-}
-
-.achievement-card .content-holder {
-    width: 100%;
-    max-width: 100%;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -11732,3 +11682,78 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+/* ==============================
+   Logros / Achievements section
+   ============================== */
+
+.blog-card.achievement-card {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.blog-card.achievement-card .img-holder {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+
+.blog-card.achievement-card .content-holder {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.blog-card.achievement-card .img-holder img {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* Hackathon carousel */
+
+#hackathonCarousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#hackathonCarousel .carousel-inner,
+#hackathonCarousel .carousel-item {
+    height: 100%;
+}
+
+#hackathonCarousel .carousel-item img {
+    width: 100% !important;
+    height: 450px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* University icon */
+
+.university-logo {
+    width: 56px !important;
+    height: 56px !important;
+    max-width: 56px !important;
+    max-height: 56px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    #hackathonCarousel {
+        height: 220px;
+    }
+
+    #hackathonCarousel .carousel-item img {
+        height: 220px !important;
+    }
+
+    .blog-card.achievement-card .img-holder img {
+        height: 220px !important;
+    }
+}
+
