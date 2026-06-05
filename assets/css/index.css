@@ -57,6 +57,18 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+#hackathonCarousel .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.university-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
