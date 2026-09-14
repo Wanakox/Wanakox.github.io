@@ -11418,21 +11418,25 @@ pre .code {
 }
 
 .navbar .brand .brand-img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -weblit-transform: translate(-50%, -50%);
-  border: 10px solid white;
-  -webkit-transition: .5s !important;
-  transition: .5s !important;
-  -weblit-transition: .5s !important;
-  z-index: 2;
-  box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
-  width: 170px;
-  border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 170px;
+    height: 170px;
+    min-width: 170px;
+    max-width: 170px;
+
+    object-fit: cover;
+    object-position: center;
+    border: 10px solid white;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    z-index: 2;
+    box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
+    transition: 0.5s !important;
 }
 
 .navbar .brand .brand-txt {
@@ -11770,16 +11774,4 @@ pre .code {
 
 .language-link:hover {
     background-color: #f7f7f7;
-}
-
-.brand .brand-img {
-    width: 170px;
-    height: 170px;
-    min-width: 80px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    align-self: center;
-    flex-shrink: 0;
 }
