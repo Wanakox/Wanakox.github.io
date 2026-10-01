@@ -11775,3 +11775,19 @@ pre .code {
 .language-link:hover {
     background-color: #f7f7f7;
 }
+
+/* Portfolio profile and responsive refinements */
+.header { height: 70vh; min-height: 560px; }
+.header .header-content .header-title { line-height: 1.05; font-size: clamp(2.4rem, 6vw, 5.5rem); }
+.header .header-content .header-mono { letter-spacing: 1px; margin-bottom: 20px; line-height: 1.5; }
+.cv-options { display: flex; flex-wrap: wrap; gap: 8px; }
+#proyectos .row > div { display: flex; }
+#proyectos .card { width: 100%; }
+#hackathonCarousel .carousel-item img { height: 100% !important; }
+@media (max-width: 991.98px) { .contact { padding: 60px 0; min-height: auto; } }
+@media (max-width: 767.98px) {
+ .header { height: auto; min-height: 560px; background-attachment: scroll; }
+ .header .header-content { position: relative; top: auto; left: auto; transform: none; padding: 60px 15px 40px; }
+ .about-section .about-card { padding: 30px 24px; }
+ .section { padding: 50px 0; }
+}

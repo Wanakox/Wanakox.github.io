@@ -1,36 +1,33 @@
-# Personal Portfolio - Juan García Moreno
+# Personal Portfolio — Juan García Moreno
 
-This repository contains my personal portfolio website, published with GitHub Pages.
+Bilingual personal portfolio published with GitHub Pages.
 
-The website works as an online CV and presents my profile, technical skills, education, projects and contact information.
+**Live website:** https://wanakox.github.io
 
-## Live Website
+Computer Engineering graduate focused on backend development and Linux systems, with an introductory academic background in AI and machine learning.
 
-[https://wanakox.github.io](https://wanakox.github.io)
+## Content
 
-## Sections
-
-- About me
-- Technical skills
-- Projects
-- Education
-- Contact
+- Professional profile, education and availability
+- Backend, C/Linux and AI/ML CVs in English
+- Featured projects: TripPlanner, IntubIA and Sports Event Ticketing System
+- Additional projects: Soundlink and NS-3 WiFi Performance Simulation
+- University collaboration, achievements and contact information
 
 ## Technologies
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
+HTML, CSS, JavaScript and Bootstrap. No build step is required.
 
-## Main Projects Featured
+## Local preview
 
-- Trip Planner
-- NS-3 WiFi Performance Simulation
-- Sports Event Ticketing System
+Run `python3 -m http.server 8000` from the repository root and open http://localhost:8000.
+
+## Editing
+
+Keep `index.html` and `index-en.html` synchronized. CVs are stored in `assets/docs/cv/`.
 
 ## Author
 
-Juan García Moreno  
-Computer Engineering student  
-GitHub: [@Wanakox](https://github.com/Wanakox)
+Juan García Moreno — Computer Engineering Graduate
+
+https://github.com/Wanakox
